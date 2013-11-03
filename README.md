@@ -28,6 +28,7 @@ Please do not include anything besides characters or numbers in your folder or f
 Make sure you use Python 2.7, 3.3 won’t work for it doesn’t have some important network modules.
 
 This software is not made for playing anything above the folder “~”. Don’t get surprised if it gives you funny results.
+(Update: Now it should can play things regardless the original location.)
 
 I am completely new to Python and programming, so do please help me to improve this, and I would appreciate it very much.
 
