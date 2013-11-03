@@ -48,6 +48,7 @@ def main(video_relpath, danmu_relpath):
     os.system('rm -rf /'+real_cache_dir)
     os.system('mkdir /'+real_cache_dir)
     os.chdir(py_path)
+    os.system('mkdir mukiocache')
     os.system('ln -s '+ real_cache_dir+' ./mukiocache ')
     os.system('cp /'+ video_relpath+'  '+ real_cache_dir)
     os.system('cp /'+ danmu_relpath+'  '+ real_cache_dir)
