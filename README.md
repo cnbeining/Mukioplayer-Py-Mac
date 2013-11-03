@@ -1,4 +1,4 @@
-Mukioplayer-Py-Mac-1.200.03
+Mukioplayer-Py-Mac-1.200.04
 ===========================
 This is a solution of the damn fact that Mac, one of the best OS in human history, does not have a reliable and nice video commit software.
 
@@ -52,10 +52,12 @@ The part of web server is from http://yige.org  .
 
 This project is uses MIT licence. 
 
-What 's new
+Update history
 -----
-In the last version, I try to run a server in ~.
+,04: Change the way to load the player to make it able to full screen.
 
-This is kinds of dangerous.
+.03: Change the way to start server to make it safer(also slower, sorry)
 
-Now I had limited the server in the folder of the programme, so as long as you do not have any "strange" file in your application folder, everything would be OK.
+.02: ???
+
+.01: First version
