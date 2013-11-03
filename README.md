@@ -29,7 +29,7 @@ After you use it, BE SURE to input Ctrl+C in the bash window!
 Things you should know
 -----
 
-Please do not include anything besides characters or numbers in your folder or filename. There ’s no guarantee that symbols would be cool.
+Please do not include anything besides characters or numbers in your folder. There ’s no guarantee that symbols would be cool.
 
 Make sure you use Python 2.7, 3.3 won’t work for it doesn’t have some important network modules.
 
