@@ -83,7 +83,7 @@ def main(video_relpath, danmu_relpath):
 <body>
 <embed id="MukioPlayer"
 src="http://localhost:8765/mukioplayerplus.swf?file=http://localhost:8765/mukiocache/mukioplayer_py/'''+video_filename+'''&type=video&sort=new"
-width="95%" height="95%" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" allowfullscreen="true" />
+width="98%" height="98%" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" allowfullscreen="true" />
 </body>
 
 </html>
