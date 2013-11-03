@@ -4,6 +4,12 @@ This is a solution of the damn fact that Mac, one of the best OS in human histor
 
 Written in Python, based on Mukioplayer, this is a quick way to enjoy commit(DanMu) on Mac.
 
+Download
+------
+I will upload every version here: https://sourceforge.net/projects/mukioplayerpymac/
+
+However, feel free to download here via ZIP. I just want to provide you a way to download all the old versions.
+
 Usage
 ------
 Download all the files, extract into one folder. Personally I do not suggest you go anywhere above ‘~’, for you would meet all kinds of privilege problems, which I suppose would drive you mad.
