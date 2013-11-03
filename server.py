@@ -48,12 +48,11 @@ def main(video_relpath, danmu_relpath):
     os.system('rm -rf /'+real_cache_dir)
     os.system('mkdir /'+real_cache_dir)
     os.chdir(py_path)
+    os.system('rm -rf ./mukiocache')
     os.system('mkdir mukiocache')
     os.system('ln -s '+ real_cache_dir+' ./mukiocache ')
     os.system('cp /'+ video_relpath+'  '+ real_cache_dir)
     os.system('cp /'+ danmu_relpath+'  '+ real_cache_dir)
-    print(danmu_filename)
-    print(danmu_filename)
     xml_to_write = '''<?xml version="1.0" encoding="utf-8"?>
 <conf>
   <performance>
@@ -73,11 +72,30 @@ def main(video_relpath, danmu_relpath):
     xml_to_write = xml_to_write.encode("utf-8")
     os.chdir(py_path)
     f = open('./conf.xml', "w")
-
     f.write(xml_to_write)
     f.close()
+    webpage_to_write = '''<html>
+
+<head>
+<title>'''+ video_filename + '''- Mukioplayer-Py-Mac</title>
+</head>
+
+<body>
+<embed id="MukioPlayer"
+src="http://localhost:8765/mukioplayerplus.swf?file=http://localhost:8765/mukiocache/mukioplayer_py/'''+video_filename+'''&type=video&sort=new"
+width="95%" height="95%" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" allowfullscreen="true" />
+</body>
+
+</html>
+'''
+    webpage = open('./webpage.htm', "w")
+    webpage.write(webpage_to_write)
+    webpage.close()
     Process(target=http_server, ).start()
-    webbrowser.open('http://localhost:8765/mukioplayerplus.swf?file=http://localhost:8765/mukiocache/mukioplayer_py/' + video_filename+'&type=video&sort=new')
+    os.chdir(py_path)
+    os.system('cp webpage.htm  '  + real_cache_dir)
+
+    webbrowser.open('http://localhost:8765/mukiocache/mukioplayer_py/webpage.htm')
 
 
 v_relpath = str(input('Vid'))
