@@ -21,7 +21,7 @@ Now the browser would open by herself, enjoy it!
 After you use it, BE SURE to input Ctrl+C in the bash window!
 
 Things you should know
-————
+-----
 
 Please do not include anything besides characters or numbers in your folder or filename. There ’s no guarantee that symbols would be cool.
 
@@ -32,13 +32,15 @@ This software is not made for playing anything above the folder “~”. Don’t
 I am completely new to Python and programming, so do please help me to improve this, and I would appreciate it very much.
 
 About me
-————
+-----
 Beining, CDC of ACI-CFG, 1st year CS student of UT.
 
 Get in touch with me via cnbeining[at]gmail.com  .
 
 Copyleft
-———-
-A number of codes are used in this little project,especially the main programme, Mukioplayer. The website of Mukioplayer is https://code.google.com/p/mukioplayer/  ,MIT License.
+-----
+A number of opensource codes are used in this little project,especially the main programme, Mukioplayer. The website of Mukioplayer is https://code.google.com/p/mukioplayer/  ,MIT License.
 
 The part of web server is from http://yige.org  .
+
+This project is uses MIT licence. 
