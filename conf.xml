@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<conf>
+  <performance>
+    <maxwidth>2048</maxwidth>
+    <maxheight>768</maxheight>
+    <maxonstage>120</maxonstage>
+    <maxwitheffect>80</maxwitheffect>
+  </performance>
+  <server>
+    <onhost>yes</onhost>
+    <load>http://localhost:8765/Movies/Nisemonogatari/11.xml</load>
+    <send></send>
+    <gateway></gateway>
+  </server>
+</conf>
+    
