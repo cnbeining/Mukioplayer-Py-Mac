@@ -29,8 +29,12 @@ After you use it, BE SURE to input Ctrl+C in the bash window!
 Things you should know
 -----
 
+<<<<<<< HEAD
 Please do not include anything besides characters or numbers in your folder or filename. There ’s no guarantee that symbols would be cool.
 (Update: This should be fixed in version .05. Open an issue if it does not work.)
+=======
+Please do not include anything besides characters or numbers in your folder. There ’s no guarantee that symbols would be cool.
+>>>>>>> f02efcc3139feeec9fde430d39f0a2e224988662
 
 Make sure you use Python 2.7, 3.3 won’t work for it doesn’t have some important network modules.
 
