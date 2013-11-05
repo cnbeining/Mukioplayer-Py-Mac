@@ -1,12 +1,13 @@
 # coding=utf-8
 '''
-Mukioplayer_Py_Mac 2.000.05
+Mukioplayer_Py_Mac 2.000.06
 Based on Mukioplayer
 MIT licence
 Beining@ACICFG
 cnbeining[at]gmail.com
 '''
 import thread
+import random
 import os
 import getpass
 import sys
@@ -19,7 +20,9 @@ import shutil
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
+#try to fix the damn code problem
 
+port = str(random.randint(6000, 15000))
 
 def http_server():
     py_path = sys.path[0]
@@ -30,7 +33,7 @@ def http_server():
     from SocketServer import ThreadingMixIn
     class ThreadingServer(ThreadingMixIn,HTTPServer):
         pass
-    serveraddr=('', 8765)   # http://yige.org
+    serveraddr=('', int(port))   # http://yige.org
     srvr=ThreadingServer(serveraddr,SimpleHTTPRequestHandler)
     srvr.serve_forever()
 
@@ -55,7 +58,7 @@ def main(video_relpath, danmu_relpath):
     os.chdir(py_path)
     user = getpass.getuser()
     user_dir = '/Users/' + user
-    print(user_dir)
+    #print(user_dir)
     real_cache_dir = user_dir + '/.cache/mukioplayer_py'
     os.system('rm -rf /'+real_cache_dir)
     os.system('mkdir /'+real_cache_dir)
@@ -76,7 +79,7 @@ def main(video_relpath, danmu_relpath):
   </performance>
   <server>
     <onhost>yes</onhost>
-    <load>http://localhost:8765/mukiocache/mukioplayer_py/danmu.xml</load>
+    <load>http://localhost:'''+ port + '''/mukiocache/mukioplayer_py/danmu.xml</load>
     <send></send>
     <gateway></gateway>
   </server>
@@ -98,8 +101,8 @@ def main(video_relpath, danmu_relpath):
 
 <body>
 <embed id="MukioPlayer"
-src="http://localhost:8765/mukioplayerplus.swf?file=http://localhost:8765/mukiocache/mukioplayer_py/'''+video_filename_url+'''&type=video&sort=new"
-width="98%" height="98%" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" allowfullscreen="true" />
+src="http://localhost:'''+port+'''/mukioplayerplus.swf?file=http://localhost:'''+port+'''/mukiocache/mukioplayer_py/'''+video_filename_url+'''&type=video&sort=new"
+width="99%" height="99%" type="application/x-shockwave-flash" allowscriptaccess="always" quality="high" allowfullscreen="true" />
 </body>
 
 </html>
@@ -112,7 +115,7 @@ width="98%" height="98%" type="application/x-shockwave-flash" allowscriptaccess=
     os.chdir(py_path)
     os.system('cp webpage.htm  '  + real_cache_dir)
     os.system('cp favicon.ico  ' + real_cache_dir)
-    webbrowser.open('http://localhost:8765/mukiocache/mukioplayer_py/webpage.htm')
+    webbrowser.open('http://localhost:'+port+'/mukiocache/mukioplayer_py/webpage.htm')
 
 
 v_relpath = str(input('Vid'))
