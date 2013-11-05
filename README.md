@@ -1,4 +1,4 @@
-Mukioplayer-Py-Mac-2.000.04
+Mukioplayer-Py-Mac-2.000.05
 ===========================
 This is a solution of the damn fact that Mac, one of the best OS in human history, does not have a reliable and nice video commit software.
 
@@ -30,6 +30,7 @@ Things you should know
 -----
 
 Please do not include anything besides characters or numbers in your folder or filename. There ’s no guarantee that symbols would be cool.
+(Update: This should be fixed in version .05. Open an issue if it does not work.)
 
 Make sure you use Python 2.7, 3.3 won’t work for it doesn’t have some important network modules.
 
@@ -54,7 +55,9 @@ This project is uses MIT licence.
 
 Update history
 -----
-,04: Change the way to load the player to make it able to full screen.
+.05：Fix the problem that file or folder name can't be Chinese or whatever.
+
+.04: Change the way to load the player to make it able to full screen.
 
 .03: Change the way to start server to make it safer(also slower, sorry)
 
