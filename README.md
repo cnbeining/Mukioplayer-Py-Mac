@@ -4,6 +4,9 @@ This is a solution of the damn fact that Mac, one of the best OS in human histor
 
 Written in Python, based on Mukioplayer, this is a quick way to enjoy commit(DanMu) on Mac.
 
+Also check https://github.com/superwbd/ABPlayerHTML5-Py--nix  , this is the one with HTML5 and ABPlayerHTML5.
+
+
 Download
 ------
 I will upload every version here: https://sourceforge.net/projects/mukioplayerpymac/
