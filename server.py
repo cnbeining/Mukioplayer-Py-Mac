@@ -1,6 +1,6 @@
 # coding=utf-8
 '''
-Mukioplayer_Py_Mac 2.000.06
+Mukioplayer_Py_Mac 2.000.07
 Based on Mukioplayer
 MIT licence
 Beining@ACICFG
@@ -53,6 +53,7 @@ def main(video_relpath, danmu_relpath):
     #danmu_relpath = getrelpath(danmu_relpath)
     #video_relpath = getrelpath(video_relpath)
     video_filename = video_relpath.split("/")[-1]
+    print(video_filename.split('.')[0])
     danmu_filename = danmu_relpath.split("/")[-1]
     py_path = sys.path[0]
     os.chdir(py_path)
@@ -68,7 +69,10 @@ def main(video_relpath, danmu_relpath):
     os.system('ln -s '+ real_cache_dir+' ./mukiocache ')
     os.system('cp /'+ video_relpath+'  '+ real_cache_dir)
     os.system('cp /'+ danmu_relpath+'  '+ real_cache_dir)
+    video_newfilename = video_filename.replace('\\', '').replace('#', '')
     os.system('mv '+real_cache_dir+'/'+danmu_filename +' '+real_cache_dir+'/danmu.xml')
+    os.system('mv '+real_cache_dir+'/'+video_filename +' '+real_cache_dir+'/'+video_newfilename)
+    #fix the problem that video_filename cannot have '#' in it
     xml_to_write = '''<?xml version="1.0" encoding="utf-8"?>
 <conf>
   <performance>
@@ -90,9 +94,8 @@ def main(video_relpath, danmu_relpath):
     f = open('./conf.xml', "w")
     f.write(xml_to_write)
     f.close()
-    video_filename = video_filename.replace('\\', '')
     video_filename_url = ''
-    video_filename_url = urllib.quote(video_filename)
+    video_filename_url = urllib.quote(video_newfilename)
     webpage_to_write = '''<html>
 
 <head>

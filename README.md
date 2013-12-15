@@ -1,4 +1,4 @@
-Mukioplayer-Py-Mac-2.000.06
+Mukioplayer-Py-Mac-2.000.07
 ===========================
 This is a solution of the damn fact that Mac, one of the best OS in human history, does not have a reliable and nice video commit software.
 
@@ -61,6 +61,8 @@ This project uses MIT licence.
 
 Update history
 -----
+.07: Fix the problem that video filename cannot have "#" in it.
+
 .06: Randomise the port, makes it impossible to be scanned.
 
 .05：Fix the problem that file or folder name can't be Chinese or whatever.
