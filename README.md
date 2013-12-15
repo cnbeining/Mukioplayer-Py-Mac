@@ -1,10 +1,12 @@
 Mukioplayer-Py-Mac-2.000.07
 ===========================
-This is a solution of the damn fact that Mac, one of the best OS in human history, does not have a reliable and nice video commit software.
+This is a solution of the damn fact that Mac, one of the best OS in human history, does not have a reliable and nice video comment playing software.
 
 Written in Python, based on Mukioplayer, this is a quick way to enjoy commit(DanMu) on Mac.
 
 Also check https://github.com/superwbd/ABPlayerHTML5-Py--nix  , this is the one with HTML5 and ABPlayerHTML5.
+
+Looking for downloading video and comment from Bilibili really simple and quick? Check Biligrab: http://www.cnbeining.com/?p=330   , auto download, rename, and concatenate into one file.(Thinking of pushing this to github...)
 
 
 Download
