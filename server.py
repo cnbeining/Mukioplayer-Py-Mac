@@ -52,6 +52,8 @@ def getrelpath(input_file):
 def main(video_relpath, danmu_relpath):
     #danmu_relpath = getrelpath(danmu_relpath)
     #video_relpath = getrelpath(video_relpath)
+    if danmu_relpath is '':
+        danmu_relpath = video_relpath.split('.')[:-1][0] + '.xml'
     video_filename = video_relpath.split("/")[-1]
     print(video_filename.split('.')[0])
     danmu_filename = danmu_relpath.split("/")[-1]

@@ -1,8 +1,8 @@
-Mukioplayer-Py-Mac-2.000.07
+Mukioplayer-Py-Mac-2.000.08
 ===========================
 This is a solution of the damn fact that Mac, one of the best OS in human history, does not have a reliable and nice video comment playing software.
 
-Written in Python, based on Mukioplayer, this is a quick way to enjoy commit(DanMu) on Mac.
+Written in Python, based on Mukioplayer, this is a quick way to enjoy comment(DanMu) on Mac.
 
 Also check https://github.com/superwbd/ABPlayerHTML5-Py--nix  , this is the one with HTML5 and ABPlayerHTML5.
 
@@ -25,9 +25,9 @@ Make sure you use Python 2.7 (this is provided along with OSX), and run ‘pytho
 
 After “Vid”, drag in the video file you would like to play. Generally speaking, .flv, .hlv, .mp4 files would be fine, however, there ’s no guarantee that they can play in this player. And don’t blame me for that: Personally, I am sure that videos with H.264+AAC won’t have any problem, which would include most of the online videos. Remember to put a   ‘   before and after you drag the file. Enter.
 
-For XML, drag in the XML file. Commit files from Bilibili would be OK, which had beed tested, while those from other sites are pending test. Please tell me the test result you have, this would be very helpful, and hereby I thank you in advance for your help. Enter.
+For XML, drag in the XML file. Commit files from Bilibili would be OK, which had beed tested, while those from other sites are pending test. Please tell me the test result you have, this would be very helpful, and hereby I thank you in advance for your help. If the video name and the comment filename are the same, just input " '' " in "XML", and it will get the comment by itself. Enter.
 
-For the first you run it, OSX may ask you for approving the connections. Just click 'Allow'.
+For the first you run it, OSX may ask you for approving the connections. It does not matter whether you choose "Allow" or not.
 
 Now the browser would open by herself, enjoy it!
 
@@ -63,6 +63,8 @@ This project uses MIT licence.
 
 Update history
 -----
+.08: If the video name and the comment filename are the same, just input " '' " in "XML", and it will get the comment by itself.
+
 .07: Fix the problem that video filename cannot have "#" in it.
 
 .06: Randomise the port, makes it impossible to be scanned.
