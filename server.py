@@ -1,6 +1,6 @@
 # coding=utf-8
 '''
-Mukioplayer_Py_Mac 2.000.07
+Mukioplayer_Py_Mac 2.000.08
 Based on Mukioplayer
 MIT licence
 Beining@ACICFG
@@ -62,6 +62,10 @@ def main(video_relpath, danmu_relpath):
     user = getpass.getuser()
     user_dir = '/Users/' + user
     #print(user_dir)
+    try:
+        os.system('mkdir '+user_dir+'/.cache/')
+    except:
+        pass
     real_cache_dir = user_dir + '/.cache/mukioplayer_py'
     os.system('rm -rf /'+real_cache_dir)
     os.system('mkdir /'+real_cache_dir)
