@@ -1,6 +1,6 @@
 # coding=utf-8
 '''
-Mukioplayer_Py_Mac 2.000.08
+Mukioplayer_Py_Mac 2.000.09
 Based on Mukioplayer
 MIT licence
 Beining@ACICFG

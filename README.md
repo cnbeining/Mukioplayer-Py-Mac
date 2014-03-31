@@ -1,12 +1,12 @@
-Mukioplayer-Py-Mac-2.000.08
+Mukioplayer-Py-Mac-2.000.09
 ===========================
 This is a solution of the damn fact that Mac, one of the best OS in human history, does not have a reliable and nice video comment playing software.
 
 Written in Python, based on Mukioplayer, this is a quick way to enjoy comment(DanMu) on Mac.
 
-Also check https://github.com/superwbd/ABPlayerHTML5-Py--nix  , this is the one with HTML5 and ABPlayerHTML5.
+Also check https://github.com/superwbd/ABPlayerHTML5-Py--nix  , this is the one with HTML5 and ABPlayerHTML5. Works fine and produce less heat with Macbooks for not using Flash, but a tiny bit more unpredictable.
 
-Looking for downloading video and comment from Bilibili really simple and quick? Check Biligrab: http://www.cnbeining.com/?p=330   , auto download, rename, and concatenate into one file.(Thinking of pushing this to github...)
+Looking for downloading video and comment from Bilibili really simple and quick? Check Biligrab: https://gist.github.com/superwbd/9605757  , auto download, rename, and concatenate into one file.(For more info, check http://www.cnbeining.com/?p=330)
 
 
 Download
@@ -27,11 +27,11 @@ After “Vid”, drag in the video file you would like to play. Generally speaki
 
 For XML, drag in the XML file. Commit files from Bilibili would be OK, which had beed tested, while those from other sites are pending test. Please tell me the test result you have, this would be very helpful, and hereby I thank you in advance for your help. If the video name and the comment filename are the same, just input " '' " in "XML", and it will get the comment by itself. Enter.
 
-For the first you run it, OSX may ask you for approving the connections. It does not matter whether you choose "Allow" or not.
+For the first you run it, OSX may ask you for approving the connections. It does not matter whether you choose "Allow" or not, but I would suggest you to select "NO", for once I 've got UToronto 's auto scanner detected the random port, and did a lot of interesting scan. Of course, nothing found, and I wrote the UToronto ITS an angry email.
 
 Now the browser would open by herself, enjoy it!
 
-After you use it, BE SURE to input Ctrl+C in the bash window! Though I have made some improvement to enhance the security, better safe than sorry.
+After you use it, BE SURE to input Ctrl+C in the bash window! Though I have made some improvement to enhance the security, better safe than sorry. 
 
 Things you should know
 -----
@@ -63,6 +63,8 @@ This project uses MIT licence.
 
 Update history
 -----
+.09: Fix the problem that if ~/.cache does not exist, it will return a 404. Also fix the version number problem.
+
 .08: If the video name and the comment filename are the same, just input " '' " in "XML", and it will get the comment by itself.
 
 .07: Fix the problem that video filename cannot have "#" in it.
