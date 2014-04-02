@@ -1,4 +1,4 @@
-Mukioplayer-Py-Mac-2.000.09
+Mukioplayer-Py-Mac
 ===========================
 This is a solution of the damn fact that Mac, one of the best OS in human history, does not have a reliable and nice video comment playing software.
 
@@ -23,9 +23,9 @@ Make sure you have a web browser which can play Flash.
 
 Make sure you use Python 2.7 (this is provided along with OSX), and run ‘python server.py’.
 
-After “Vid”, drag in the video file you would like to play. Generally speaking, .flv, .hlv, .mp4 files would be fine, however, there ’s no guarantee that they can play in this player. And don’t blame me for that: Personally, I am sure that videos with H.264+AAC won’t have any problem, which would include most of the online videos. Remember to put a   ‘   before and after you drag the file. Enter.
+After “Vid”, drag in the video file you would like to play. Generally speaking, .flv, .hlv, .mp4 files would be fine, however, there ’s no guarantee that they can play in this player. And don’t blame me for that: Personally, I am sure that videos with H.264+AAC won’t have any problem, which would include most of the online videos. Enter.
 
-For XML, drag in the XML file. Commit files from Bilibili would be OK, which had beed tested, while those from other sites are pending test. Please tell me the test result you have, this would be very helpful, and hereby I thank you in advance for your help. If the video name and the comment filename are the same, just input " '' " in "XML", and it will get the comment by itself. Enter.
+For XML, drag in the XML file. Commit files from Bilibili would be OK, which had beed tested, while those from other sites are pending test. Please tell me the test result you have, this would be very helpful, and hereby I thank you in advance for your help. If the video name and the comment filename are the same, just press ENTER, and it will get the comment by itself. Enter.
 
 For the first you run it, OSX may ask you for approving the connections. It does not matter whether you choose "Allow" or not, but I would suggest you to select "NO", for once I 've got UToronto 's auto scanner detected the random port, and did a lot of interesting scan. Of course, nothing found, and I wrote the UToronto ITS an angry email.
 
@@ -63,6 +63,8 @@ This project uses MIT licence.
 
 Update history
 -----
+.10: Use raw_input, now you do not need to input " ' "_ before files.
+
 .09: Fix the problem that if ~/.cache does not exist, it will return a 404. Also fix the version number problem.
 
 .08: If the video name and the comment filename are the same, just input " '' " in "XML", and it will get the comment by itself.

@@ -1,6 +1,6 @@
 # coding=utf-8
 '''
-Mukioplayer_Py_Mac 2.000.09
+Mukioplayer_Py_Mac 2.000.10
 Based on Mukioplayer
 MIT licence
 Beining@ACICFG
@@ -127,9 +127,10 @@ width="99%" height="99%" type="application/x-shockwave-flash" allowscriptaccess=
     webbrowser.open('http://localhost:'+port+'/mukiocache/mukioplayer_py/webpage.htm')
 
 
-v_relpath = str(input('Vid'))
+
+v_relpath = raw_input('Vid')
 #v_relpath = v_relpath.encode('utf-8')
-X_relpath = str(input('XML'))
+X_relpath = raw_input('XML')
 #X_relpath = X_relpath.encode('utf-8')
 
 main(v_relpath, X_relpath)
