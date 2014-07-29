@@ -4,7 +4,7 @@ This is a solution of the damn fact that Mac, one of the best OS in human histor
 
 Written in Python, based on Mukioplayer, this is a quick way to enjoy comment(DanMu) on Mac.
 
-Also check https://github.com/superwbd/ABPlayerHTML5-Py--nix  , this is the one with HTML5 and ABPlayerHTML5. Works fine and produce less heat with Macbooks for not using Flash, but a tiny bit more unpredictable.
+Also check https://github.com/cnbeining/ABPlayerHTML5-Py--nix/blob/master/README.md  , this is the one with HTML5 and ABPlayerHTML5. Works fine and produce less heat with Macbooks for not using Flash, but a tiny bit more unpredictable.
 
 Looking for downloading video and comment from Bilibili really simple and quick? Check Biligrab: https://gist.github.com/superwbd/9605757  , auto download, rename, and concatenate into one file.(For more info, check http://www.cnbeining.com/?p=330)
 
