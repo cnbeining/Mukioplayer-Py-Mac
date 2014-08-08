@@ -4,9 +4,9 @@ This is a solution of the damn fact that Mac, one of the best OS in human histor
 
 Written in Python, based on Mukioplayer, this is a quick way to enjoy comment(DanMu) on Mac.
 
-Also check https://github.com/cnbeining/ABPlayerHTML5-Py--nix/blob/master/README.md  , this is the one with HTML5 and ABPlayerHTML5. Works fine and produce less heat with Macbooks for not using Flash, but a tiny bit more unpredictable.
+Please check https://github.com/cnbeining/ABPlayerHTML5-Py--nix/  , this is the one with HTML5 and ABPlayerHTML5. Works fine and produce less heat with Macbooks for not using Flash, great performance especially with Safari.
 
-Looking for downloading video and comment from Bilibili really simple and quick? Check Biligrab: https://gist.github.com/superwbd/9605757  , auto download, rename, and concatenate into one file.(For more info, check http://www.cnbeining.com/?p=330)
+Looking for downloading video and comment from Bilibili really simple and quick? Check Biligrab: https://github.com/cnbeining/Biligrab  , auto download, rename, and concatenate into one file.(For more info, check http://www.cnbeining.com/?s=Biligrab )
 
 
 Download
@@ -49,7 +49,7 @@ I am completely new to Python and programming, so do please help me to improve t
 
 About me
 -----
-Beining, CDC of ACI-CFG, 1st year CS student of UT.
+Beining, CDC of ACI-CFG, CS student of UT.
 
 Get in touch with me via cnbeining[at]gmail.com  .
 
@@ -63,6 +63,8 @@ This project uses MIT licence.
 
 Update history
 -----
+.11: Use ~ as root, as in ABPlayerHTML5-Py-*nix #3.
+
 .10: Use raw_input, now you do not need to input " ' "_ before files.
 
 .09: Fix the problem that if ~/.cache does not exist, it will return a 404. Also fix the version number problem.

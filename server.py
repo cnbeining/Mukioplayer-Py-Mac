@@ -1,6 +1,6 @@
 # coding=utf-8
 '''
-Mukioplayer_Py_Mac 2.000.10
+Mukioplayer_Py_Mac 2.000.11
 Based on Mukioplayer
 MIT licence
 Beining@ACICFG
@@ -9,6 +9,7 @@ cnbeining[at]gmail.com
 import thread
 import random
 import os
+from os.path import expanduser
 import getpass
 import sys
 import webbrowser
@@ -40,10 +41,10 @@ def http_server():
 
 
 
-
 def getrelpath(input_file):
+    '''Good with all *nix.'''
     user = getpass.getuser()
-    user_dir = '/Users/' + user
+    user_dir = expanduser("~")
     os.chdir(user_dir)
     file_relpath = os.path.relpath(input_file)
     return file_relpath
@@ -59,8 +60,7 @@ def main(video_relpath, danmu_relpath):
     danmu_filename = danmu_relpath.split("/")[-1]
     py_path = sys.path[0]
     os.chdir(py_path)
-    user = getpass.getuser()
-    user_dir = '/Users/' + user
+    user_dir = expanduser("~")
     #print(user_dir)
     try:
         os.system('mkdir '+user_dir+'/.cache/')
